@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty of Nature</title>
+
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>The Beauty of Nature</h1>
+        <button id="themeBtn">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+
+    
+        <section>
+            <h2>About Nature</h2>
+            <p>
+                Nature is the foundation of life on Earth. It includes everything that exists 
+                without human influence—forests, oceans, mountains, rivers, deserts, the sky, 
+                wildlife, and even the smallest microorganisms. Nature is a vast, interconnected 
+                system where every plant, animal, and natural process plays a role in maintaining 
+                balance. Without nature, humans would have no air to breathe, no water to drink, 
+                no food to eat, and no land to live on.
+            </p>
+            <p>
+                The beauty of nature can be seen everywhere—from the peaceful flow of rivers to 
+                the breathtaking peaks of mountain ranges. Every forest is a living world of 
+                plants and animals. Every ocean holds countless species, many still undiscovered. 
+                Even simple things like the rustle of leaves, the singing of birds, or the smell 
+                of fresh rain remind us of the natural wonders around us.
+            </p>
+            <p>
+                Nature also plays a crucial role in our mental and emotional well-being. Studies 
+                show that spending time outdoors reduces stress, improves mood, boosts creativity, 
+                and helps people feel more connected to the world. Whether it's walking through a 
+                park, hiking in the mountains, or sitting by the sea, nature brings peace and 
+                inspiration.
+            </p>
+            <p>
+                However, nature is fragile. Human activities like pollution, deforestation, and 
+                climate change threaten ecosystems all over the world. Protecting nature is not 
+                just about saving plants and animals—it’s about preserving a healthy planet for 
+                ourselves and future generations. By caring for nature, planting trees, reducing 
+                waste, and respecting wildlife, we help restore the balance and beauty of the Earth.
+            </p>
+            <p>
+                Nature is not just a background to life; it <strong>is</strong> life itself. It 
+                reminds us that we are part of something larger, something ancient and powerful. 
+                When we protect nature, we protect the very world that makes life possible.
+            </p>
+        </section>
+
+        <section>
+            <h2>Random Nature Fact</h2>
+            <p id="fact">Click the button to learn something new!</p>
+            <button id="factBtn">Show Nature Fact</button>
+        </section>
+
+        <section>
+            <h2>Why Nature Matters</h2>
+            <ul>
+                <li>It supports all life on Earth.</li>
+                <li>It provides food, water, and shelter.</li>
+                <li>It reduces stress and improves mental health.</li>
+                <li>It inspires creativity and peace.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Nature Website. All rights reserved.</p>
+		<a href="about.html" class="back-btn">About</a>
+    </footer>
+
+  
+    <script>
+        const themeBtn = document.getElementById("themeBtn");
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+
+        const facts = [
+            "Trees produce oxygen and absorb carbon dioxide.",
+            "About 71% of the Earth's surface is covered by water.",
+            "Bees are responsible for pollinating about one-third of the food we eat.",
+            "The Amazon rainforest produces 20% of the world's oxygen.",
+            "There are more stars in the universe than grains of sand on Earth."
+        ];
+
+        const factElement = document.getElementById("fact");
+        const factBtn = document.getElementById("factBtn");
+
+        factBtn.addEventListener("click", () => {
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            factElement.textContent = randomFact;
+        });
+    </script>
+</body>
+</html>

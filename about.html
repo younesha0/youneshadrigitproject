@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Nature</title>
+
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>About This Nature Website</h1>
+        <button id="themeBtn">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                This website was created to celebrate the beauty and importance of nature. 
+                Our goal is to help people understand how nature shapes our world, supports 
+                life, and brings peace and inspiration to everyone. We want to encourage 
+                others to explore, respect, and protect the natural environment.
+            </p>
+        </section>
+
+        <section>
+            <h2>What You Will Find Here</h2>
+            <p>
+                On this website, you will discover fascinating facts about nature, learn about 
+                different ecosystems, and explore how nature affects our daily lives. Whether 
+                you love forests, oceans, mountains, animals, or plants, this site provides 
+                simple and educational information for all ages.
+            </p>
+            <ul>
+                <li>Beautiful descriptions of natural environments</li>
+                <li>Random nature facts to learn something new</li>
+                <li>Reasons why nature is essential for life</li>
+                <li>Helpful ideas on how to protect the Earth</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why Nature Matters</h2>
+            <p>
+                Nature gives us everything we need—clean air, fresh water, nutritious food, 
+                and a stable climate. It also provides relaxation, inspiration, and a sense 
+                of connection to something greater. By appreciating and protecting nature, 
+                we help build a healthier future for our planet and all living creatures.
+            </p>
+        </section>
+
+        <section>
+            <h2>Learn More</h2>
+            <p>
+                Go back to the home page to explore the main content of our nature website.
+            </p>
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Nature Website. All rights reserved.</p>
+    </footer>
+
+    
+    <script>
+        // Toggle Dark Mode
+        const themeBtn = document.getElementById("themeBtn");
+        themeBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
